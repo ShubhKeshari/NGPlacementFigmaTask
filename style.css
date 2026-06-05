@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.banner-box {
+    width: 100%;
+    height: 1080px;
+    background-color: #1A9CDA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.bottom-area {
+    background-color: #0B3C5D;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 40px 24px;
+    position: relative;
+}
+
+.content-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.small-title {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.bottom-area h1 {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.desc-text {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 32px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dot.active {
+    background-color: #FFFFFF;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 16px 32px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.primary-btn {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #0B3C5D;
+}
+
+.secondary-btn {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 540px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 0;
+}
+
+.prev-btn {
+    left: 24px;
+}
+
+.next-btn {
+    right: 24px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 64px;
+}
+
+.card {
+    background-color: #52994b;
+    width: 100%;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.heading {
+    margin-top: 64px;
+    margin-bottom: 48px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+}
+
+.image-bottom {
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 4px;
+}
+
+.image-bottom-textrow1 {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: white;
+}
+
+.image-bottom-textrow2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-row {
+    display: flex;
+    gap: 8px;
+}
+
+.price {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: white;
+}
+
+.price-cut {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #aaaaaa;
+    text-decoration-line: line-through;
+}
+
+@media (max-width: 1024px) {
+    .slider-content-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-col.empty-col:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-image-block {
+        height: 698px;
+        font-size: 48px;
+    }
+    
+    .nav-arrow {
+        top: 349px;
+        font-size: 48px;
+    }
+
+    .bottom-area {
+        padding: 40px 24px;
+    }
+
+    .bottom-area h1 {
+        font-size: 32px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .primary-btn, .secondary-btn {
+        width: 100%;
+    }
+
+    .dots-container {
+        margin-top: 16px;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+        padding-left: 12px;
+        padding-right: 12px;
+        row-gap: 8px;
+        column-gap: 4px;
+    }
+    
+    .card {
+        width: calc(50% - 2px);
+        height: 345.1px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .image {
+        height: 200px;
+    }
+    
+    .heading {
+        font-size: 32px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .image-bottom {
+        padding-left: 8px;
+        padding-bottom: 8px;
+        padding-right: 8px;
+        padding-top: 0;
+        margin-top: auto;
+    }
+    
+    .image-bottom-textrow1 {
+        font-size: 12px;
+    }
+    
+    .price, .price-cut {
+        font-size: 12px;
+    }
+
+    .image-bottom-textrow2 {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
