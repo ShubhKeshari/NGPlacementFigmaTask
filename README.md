@@ -5,11 +5,8 @@ This project is a strict, pixel-perfect translation of a provided Figma design i
 
 ## Tech Stack
 - HTML5
-- CSS3 (Flexbox, CSS Grid, Media Queries)
-- Vanilla JavaScript
-
-## Repository
-[Insert Repository Link Here]
+- CSS3
+- JavaScript
 
 ## Usage Guide
 
@@ -18,7 +15,7 @@ No special development environment or package managers are required to run this 
 
 ### Installation
 1. Clone the repository to your local machine:
-   git clone <repository-url>
+   git clone https://github.com/ShubhKeshari/NGPlacementFigmaTask.git
 2. Navigate into the project directory.
 
 ### Running the Project
@@ -28,4 +25,4 @@ No special development environment or package managers are required to run this 
 ### Features to Test
 - **Desktop View:** Open the page on a standard desktop screen (e.g., 1920x1080) to view the full slider layout and the 4-column product grid.
 - **Mobile View:** Resize your browser window down to mobile dimensions (e.g., 375px width) or use the browser's Developer Tools Device Toolbar. The layout will adapt to the exact 2-column mobile grid and adjusted typography specified in the design.
-- **Slider Interaction:** Click the left and right navigation arrows, click the pagination dots, or swipe left/right (on touch devices/emulators) to navigate through the hero slider. Autoplay runs automatically every 3 seconds and resets upon manual interaction.
+- **Slider Interaction:** Click the left and right navigation arrows, click the pagination dots, or swipe left/right to navigate through the hero slider. Autoplay runs automatically every 3 seconds and resets upon manual interaction.
